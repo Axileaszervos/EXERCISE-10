@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>MyRepo</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="my-hci">My HCI</h1>
+<p>ΟΝΟΜΑΤΕΠΟΝΥΜΟ: ΑΧΙΛΛΕΑΣ ΖΕΡΒΟΣ</p>
+<p>ΑΜ: 2021055</p>
+<p>ΟΜΑΔΑ: <a
+href="https://github.com/organizations/OMADA12/settings/profile">OMADA12</a></p>
+<h1 id="επικοινωνία-ανθρώπου-υπολογιστή">Επικοινωνία
+Ανθρώπου-Υπολογιστή</h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Εβδομάδα</th>
+<th><a href="https://courses-ionio.github.io/help/deliverables/">Όλα τα
+παραδοτέα βρίσκονται στην ίδια σελίδα της τελικής αναφοράς</a> με τα
+προσωπικά στοιχεία σας (Όνομα, ΑΜ, github profile) και μαζί με αυτόν εδώ
+τον πίνακα περιεχομένων</th>
+<th>Σύνδεσμος στην <a
+href="https://github.com/courses-ionio/help/discussions/categories/show-and-tell">εβδομαδιαία
+παρουσίαση προόδου στις συζητήσεις</a></th>
+<th>Αυτοαξιολόγηση σύμφωνα με τα κριτήρια της αντίστοιχης άσκησης</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><a
+href="https://github.com/courses-ionio/hci/discussions/1794">Δημιουργία
+ομάδας</a> + <a href="https://courses-ionio.github.io/help/guide/">Φορκ
+και δημιουργία σελίδας τελικής αναφοράς</a>, <a
+href="https://raw.githubusercontent.com/courses-ionio/hci/master/README.md">προσθήκη
+πίνακα περιεχομένων</a>, <a
+href="https://courses-ionio.github.io/help/intro/">συγγραφή της
+εισαγωγής</a>, αποστολή της εισαγωγής <a
+href="https://github.com/courses-ionio/help/discussions/categories/show-and-tell">για
+σχολιασμό στην συζήτηση</a> και καταγραφή του συνδέσμου συζήτησης δίπλα
+–&gt;</td>
+<td>https://github.com/courses-ionio/help/discussions/883</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Άσκηση γραμμής εντολών (linux install)</td>
+<td>https://github.com/courses-ionio/help/discussions/1064</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Συμμετοχικό περιεχόμενο A1</td>
+<td>https://github.com/courses-ionio/help/discussions/1221</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Άσκηση γραμμής εντολών (warm up cli)</td>
+<td>https://github.com/courses-ionio/help/discussions/1334</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Συμμετοχικό περιεχόμενο A2</td>
+<td>https://github.com/courses-ionio/help/discussions/1479</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Κατασκευή του βιβλίου Α</td>
+<td>https://github.com/courses-ionio/help/discussions/1585</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Συμμετοχικό περιεχόμενο B1</td>
+<td>https://github.com/courses-ionio/help/discussions/1688</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>Άσκηση γραμμής εντολών</td>
+<td>https://github.com/courses-ionio/help/discussions/1762</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>Συμμετοχικό περιεχόμενο B2</td>
+<td>https://github.com/courses-ionio/help/discussions/1835</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>Άσκηση γραμμής εντολών</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>Κατασκευή του βιβλίου Β</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>Τελική αναφορά*</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="ο-παραδοτεο-εισαγωγη">1ο ΠΑΡΑΔΟΤΕΟ-ΕΙΣΑΓΩΓΗ</h1>
+<p>Μέσα από το μάθημα “Επικοινωνία Ανθρώπου-Υπολογιστή” έχω θέσει
+κάποιους προσωπικούς στόχους στον εαυτό μου με σκοπό την μερική(άν όχι
+ολική) ολοκλήρωση τους μέχρι το τέλους του τρέχοντως εξαμήνου: * Πρώτα
+από όλα, με ενδιαφέρει να κατανοήσω στον μεγαλύτερο δυνατό βαθμό την
+πλατφόρμα github και τις δυνατότητες που προσφέρει στον χρήστη επειδή,
+θέλω να δημιουργήσω με τον σωστό τρόπο το προσωπικό μου portfolio. *
+Έπειτα, θέλω να εξελίξω τις ομαδικές μου ικανότητες και να μάθω να
+λειτουργώ σωστά ως μέλος μιας ομάδας, μιάς και οι άνθρωποι πρέπει να
+συνεργάζονται ομαδικά και όχι ατομικά, για το καλύτερο δυνατό
+αποτέλεσμα. * Ακόμη, έχοντας μάθει στη “ανακυκλώσιμη” γνώση, θέλω για
+πρώτη φορά να ανακαλύψω μόνος μου τις γνώσεις που χρειάζομαι, δίχως
+κάποιος να μου τις “σερβίρει” έτοιμες. * Τέλος και το πιο σημαντικό για
+εμένα, μέσα από την έρευνα που θα κάνω για την εκπαιδευτική τεχνολογία,
+θέλω να κατανοήσω όσο περισσότερο γίνεται το <code>πώς</code> μια
+υπολογιστική συσκευή μπορεί να αλληλεπιδράσει με τον σωστό τρόπο με έναν
+μαθητή και αποτελέσει ένα <code>εργαλείο</code> με απώτερο σκοπό την
+βοήθεια στην ανακάλυψη γνώσεων από τον ίδιο τον μαθητη. Αυτή η έρευνα θα
+αποτελέσει, τον οδηγό σε ένα ταξίδι το οποίο θα έχει ώς προορισμό την
+ανάπτυξη ενός δικού μου εκπαιδευτικού εργαλιού που θα καλύπτει τις
+πραγματικές ανάγκες εν μαθητή.</p>
+<h1 id="ο-παραδοτεο-εγκατασταση-του-arch-linux">2ο ΠΑΡΑΔΟΤΕΟ-ΕΓΚΑΤΑΣΤΑΣΗ
+ΤΟΥ ARCH LINUX</h1>
+<h2 id="εντυπωσεισ-και-προβληματα-κατα-την-εγκατασταση">ΕΝΤΥΠΩΣΕΙΣ ΚΑΙ
+ΠΡΟΒΛΗΜΑΤΑ ΚΑΤΑ ΤΗΝ ΕΓΚΑΤΑΣΤΑΣΗ</h2>
+<p>Ήταν η πρώτη μου επαφή με σύστημα linux, ποσό μάλλον ο τρόπος
+εγκατάστασης του ο οποίος ήταν με commands και όχι με κάποιο γραφικό
+περιβάλλον όπως έχω συνηθίσει. Αρχικά, το πρώτο μου δίλημμα ήταν εάν η
+εγκατάσταση θα γινόταν σε usb stick ή σε partition του ήδη υπάρχον
+δίσκου μου(dual-boot), τελικά κατέληξα σε usb stick μιας και είναι ο
+ασφαλέστερος τρόπος για έναν αρχάριο σαν έμενα.</p>
+<p>Το πρώτο πρόβλημα που συνάντησα ήταν το wiki του arch linux,
+προσωπικά με δυσκόλεψε πολύ και με έκανε να καταφύγω σε αυτό εδώ το <a
+href="https://www.youtube.com/watch?v=yaThYGr37DI">tutorial</a>. Στην
+συνεχεία, το arch κατά την εγκατάσταση δεν έχει τι δυνατότητα σύνδεσης
+με wifi πράγμα το οποίο με ανάγκασε να προσπαθήσω ανεπιτυχώς να
+εγκαταστήσω το <code>iwctl</code> και στη συνέχεια να συμβιβαστώ με ένα
+ethernet cable το όποιο προσωπικά δεν με βόλεψε αφού το router μου είναι
+αρκετά μακριά μου. Τέλος, το command <code>install-grub</code> δεν μου
+δούλευε με αποτέλεσμα να ψάχνω σε διάφορα forums για εναλλακτικά
+commands.</p>
+<h2 id="τροποσ-εγκαταστασησ-βημα-βημα">ΤΡΟΠΟΣ ΕΓΚΑΤΑΣΤΑΣΗΣ
+ΒΗΜΑ-ΒΗΜΑ</h2>
+<p>Αρχικά, για την εγκατάσταση, έπρεπε να μετατρέψω το usb stick μου σε
+bootable, αυτό επιτεύχθηκε με την βοήθεια του <a
+href="https://rufus.ie/en/">rufus</a>, έπειτα κατέβασα από το <a
+href="https://archlinux.org/download/">wiki</a> του arch το απαραίτητο
+iso και το πέρασα στο usb stick.</p>
+<p>Αφού πραγματοποίησα το boot μέσω του usb stick στον υπολογιστή μου,
+πρόσθεσα άλλο ένα άδειο usb stick στο οποίο χρησιμοποιήθηκε για την
+εγκατάσταση του arch-linux. Στη συνέχεια, το usb έπρεπε να χωριστεί σε
+partitions για την εγκατάσταση του arch linux. Με την βοήθεια του
+<code>gdisk /dev/sda</code> δημιούργησα 2 partitions, ένα για το boot
+και ένα με τον υπόλοιπο διαθέσιμο χώρο για λειτουργικό σύστημα,
+μετέπειτα και τα δύο partitions έγιναν <code>mount</code>.</p>
+<p>Έπειτα από αυτό, έκανα εγκατάσταση το πρώτο μεγάλο
+πακέτο(<code>pacstrap /mnt base base-devel linux-linux firmware vim</code>).
+Με την εντολή <code>arch-chroot /mnt</code> μπήκα σε root profile με
+σκοπό την εγκατάσταση του grub. Στην συνέχεια με την εντολή
+<code>timedatectl list-timezones | "enter the time zone"</code> πρόσθεσα
+την ώρα και την ημερομηνία της πόλης μου με σκοπό το σύστημα μου να
+είναι σωστά ενημερωμένο. Τέλος, με την εντολή
+<code>pacman -S grub</code> εγκατέστησα το grub και με την εντολή
+<code>pacman -S netowrkmanager</code> του απαραίτητους drivers για το
+δίκτυο στο σύστημα μου.</p>
+<p>Πριν κάνω reboot και τελειώσω το installation, φρόντισα να
+δημιουργήσω ένα προφίλ με την εντολή <code>vim /etc/hostname</code> και
+προσωπικό κωδικό με την εντολή <code>passwd</code>. Μετά την εκτέλεση
+αυτών των 2 βγήκα από το root profile με την εντολή <code>exit</code>
+και με την εντολή <code>reboot</code> πραγματοποίησα επανεκκίνηση στο
+σύστημα μου.</p>
+<h3 id="asciinema-videos">ASCIINEMA VIDEOS</h3>
+<ul>
+<li><a
+href="https://asciinema.org/a/528720"><code>neofetch-journalctl</code></a></li>
+</ul>
+<h1 id="ο-παραδοτεο-συμμετοχικο-περιεχομενο-α1">3ο ΠΑΡΑΔΟΤΕΟ-ΣΥΜΜΕΤΟΧΙΚΟ
+ΠΕΡΙΕΧΟΜΕΝΟ Α1</h1>
+<p>Σε αυτό το παραδοτέο απαιτείται η συμμετοχή όλων μας τόσο ατομικά όσο
+και ομαδικά με τον εμπλουτισμό περιεχομένου στο ήδη υπάρχον <a
+href="https://pibook.epidro.me">site</a>. Ως admin της ομάδας μου,
+δημιoύργησα το <a href="omadaa12.netlify.app">site</a> και πρόσθεσα τα
+απαραίτητα <a
+href="https://github.com/orgs/OMADA12/repositories">modules</a> στο
+reposiroty της ομάδας μου.</p>
+<p>Στο ατομικό κομμάτι της εβδομαδιαίας δραστηριότητας, δημιούργησα το
+προσωπικό μου <a href="https://axileaszervos.netlify.app">site</a> και
+δημιούργησα 2 εικόνες, μία για τον Αpple iMac G3 και μία για το
+VirtualBoy</p>
+<h2 id="σύντομη-παρουσίαση-του-apple_imac">Σύντομη παρουσίαση του
+Apple_iMac</h2>
+<figure>
+<img
+src="https://user-images.githubusercontent.com/115211756/201630219-c21a755a-2783-4224-96fa-af281ab58f33.jpg"
+alt="Imacn" />
+<figcaption aria-hidden="true">Imacn</figcaption>
+</figure>
+<p>Ο Apple_iMac ήταν ο πρώτος iMac που κυκλοφόρησε η Apple. Ο Apple_iMac
+ξεχώριζε για το καινοτόμο desing που είχε, με μοντέρνα πλαστικά και
+εξωτικά χρώματα. Παρείχε εύκολη σύνδεση στο διαδίκτυο και είχε γραφικό
+περιβάλλον.</p>
+<h2 id="σύντομη-παρουσίαση-του-virtualboy">Σύντομη παρουσίαση του
+virtualboy</h2>
+<figure>
+<img
+src="https://user-images.githubusercontent.com/115211756/201630196-9fa6ad70-7f41-43db-8acc-13b2fba5406f.jpg"
+alt="Virtualboyn" />
+<figcaption aria-hidden="true">Virtualboyn</figcaption>
+</figure>
+<p>Το virtualboy κυκλοφόρησε το 1995 από την Nintendo και ήταν το πρώτο
+εμπορικό virtual reality headset που κυκλοφόρησε ποτέ. Με το virtualboy
+η εταιρία ήθελε να εισάγει την εικονική πραγματικότητα στο gaming άλλα
+λίγο η παρωχημένη τεχνολογία της εποχής και λίγο το κόκκινο χρώμα στα
+παιχνίδια που ζάλιζε τους παίκτες έκαναν την συσκευή να αποτύχει.</p>
+<h2 id="τα-links-και-οι-φωτογραφίες-από-το-προσωπικό-μου-αποθετήριο">Τα
+Links και οι φωτογραφίες από το προσωπικό μου αποθετήριο:</h2>
+<ul>
+<li><h4 id="το-προσωπικό-μου-site">Το προσωπικό μου <a
+href="https://axileaszervos.netlify.app">site</a></h4></li>
+</ul>
+<p>### Apple_iMac:</p>
+<p>~Tο .md αρχείο του Apple_iMac στο προσωπικό μου αποθετήριο: <a
+href="https://github.com/Axileaszervos/_gallery/blob/fd0a74b630c8e7be62a7af189f2a30497b5bab0d/Imac.md">Apple_iMac.md</a>~</p>
+<p>~Η εικόνα του Apple_iMac στο προσωπικό μου site: <a
+href="https://axileaszervos.netlify.app/gallery/imac/">Apple_iMac</a>~</p>
+<p>~Η κανονική εικόνα στο αποθετήριο μου: <a
+href="https://github.com/Axileaszervos/images/blob/4b441112152c6ea74f6b2f09f7f6c559a7f07853/Imac.jpg">Imac.jpg</a>~</p>
+<p>~Η resized σε 160x160 pixels εικόνα στο αποθετήριο μου: <a
+href="https://github.com/Axileaszervos/images/blob/4b441112152c6ea74f6b2f09f7f6c559a7f07853/Imac-thumb.jpg">Imac-thumb.jpg</a>~</p>
+<p>### VirtualBoy:</p>
+<p>~Tο .md αρχείο του VirtualBoy στο προσωπικό μου αποθετήριο: <a
+href="https://github.com/Axileaszervos/_gallery/blob/fd0a74b630c8e7be62a7af189f2a30497b5bab0d/Virtualboy.md">VirtualBoy.md</a>~</p>
+<p>~Η εικόνα του VirtualBoy στο προσωπικό μου site: <a
+href="https://axileaszervos.netlify.app/gallery/virtualboy/">VirtualBoy</a>~</p>
+<p>~Η κανονική εικόνα στο αποθετήριο μου: <a
+href="https://github.com/Axileaszervos/images/blob/4b441112152c6ea74f6b2f09f7f6c559a7f07853/Virtualboy.jpg">VirtualBoy-photo</a>~</p>
+<p>~Η resized σε 160x160 pixels εικόνα στο αποθετήριο μου: <a
+href="https://github.com/Axileaszervos/images/blob/4b441112152c6ea74f6b2f09f7f6c559a7f07853/Virtualboy-thumb.jpg">VirtualBoy-resized</a>~</p>
+<h2 id="τα-links-και-οι-φωτογραφίες-από-το-ομαδικό-αποθετήριο">Τα Links
+και οι φωτογραφίες από το ομαδικό αποθετήριο:</h2>
+<ul>
+<li><h4 id="το-ομαδικό-site">Το ομαδικό <a
+href="https://omada122.netlify.app">site</a></h4></li>
+</ul>
+<p>### Apple_iMac:</p>
+<p>~Tο .md αρχείο του Apple_iMac στο αποθετήριο της ομάδας μου: <a
+href="https://github.com/OMADA12/_gallery/blob/master/Imac.md">Apple_iMac.md</a>~</p>
+<p>~Η εικόνα του Apple_iMac στο site της ομάδας μου: <a
+href="">Apple_iMac</a>~</p>
+<p>~Η κανονική εικόνα στο αποθετήριο της ομάδας μου: <a
+href="https://github.com/OMADA12/images/blob/master/Imac.jpg">Imac.jpg</a>~</p>
+<p>~Η resized σε 160x160 pixels εικόνα στο αποθετήριο της ομάδας μου: <a
+href="https://github.com/OMADA12/images/blob/master/Imac-thumb.jpg">Imac-thumb.jpg</a>~</p>
+<p>### VirtualBoy:</p>
+<p>~Tο .md αρχείο του VirtualBoy στο αποθετήριο της ομάδας μου: <a
+href="https://github.com/OMADA12/_gallery/blob/master/Virtualboy.md">VirtualBoy</a>~</p>
+<p>~Η εικόνα του VirtualBoy στο site της ομάδας μου: <a
+href="">VirtualBoy</a>~</p>
+<p>~Η κανονική εικόνα στο στο αποθετήριο της ομάδας μου: <a
+href="https://github.com/OMADA12/images/blob/master/Virtualboy.jpg">VirtualBoy.jpg</a>~</p>
+<p>~Η resized σε 160x160 pixels εικόνα στο αποθετήριο της ομάδας μου: <a
+href="https://github.com/OMADA12/images/blob/master/Virtualboy-thumb.jpg">VirtualBoy-thumb.jpg</a>~</p>
+<h1 id="update"><code>UPDATE</code></h1>
+<p>Έπειτα από παρατηρήσεις του καθηγητή μου, πήρα την απόφαση να αλλάξω
+τις φωτογραφίες μου και να προσθέσω την γλώσσα προγραμματισμού
+<code>Logo</code> και την εκπαιδευτική σειρά από κατασκευές
+<code>Lego-Education-WeDo-2.0</code> όπου και οι δύο φωτογραφίες ανήκουν
+στον τομέα της εκπαιδευτικής τεχνολογίας. ## Σύντομη παρουσίαση του
+<code>Lego-wedo 2.0</code></p>
+<figure>
+<img
+src="https://user-images.githubusercontent.com/115211756/205507828-9f8f1580-fc5a-49f0-9d44-95a3b43e66cd.jpg"
+alt="legowedo123" />
+<figcaption aria-hidden="true">legowedo123</figcaption>
+</figure>
+<p>Το Lego Education WeDo 2.0 είναι μια σειρά από κατασκευές με
+τουβλάκια της Lego και μηχανικά εξαρτήματα(γρανάζια, κινητήρες,
+αισθητήρες). Επικοινωνούν με ειδικευμένο πρόγραμμα της εταιρίας το οποίο
+παρέχει, γραφικό περιβάλλον με ζωντανά χρώματα στο ο μαθητής μπορεί, να
+προγραμματίσει το ρομπότ χρησιμοποιώντας προγραμματισμό με blocks και να
+παρακολουθήσει ενημερωτικά/εκπαιδευτικά βιντεάκια για τα Lego Wedo.
+Τέλος, παρέχεται η δυνατότητα στον μαθητή να δημιουργήσει την δικιά του
+κατασκευή, μετατρέποντας το Lego Wedo σε ένα δημιουργικό και ταυτόχρονα
+σωστά δομημένο εκπαιδευτικό εργαλείο.</p>
+<h2 id="σύντομη-παρουσίαση-της-γλώσσας-προγραμματισμού-logo">Σύντομη
+παρουσίαση της γλώσσας προγραμματισμού <code>Logo</code></h2>
+<figure>
+<img
+src="https://user-images.githubusercontent.com/115211756/205507944-ca8dda7c-2e4d-449f-87d2-e257c8a9157f.jpg"
+alt="Logo" />
+<figcaption aria-hidden="true">Logo</figcaption>
+</figure>
+<p>Η γλώσσα προγραμματισμού <code>Logo</code> κατασκευάστηκε εξ αρχής
+για παιδιά. Χρησιμοποιεί τεχνικές συναρτησιακού προγραμματισμού και οι
+εντολές μοιάζουν αρκετά με καθημερινές λέξης. Οι εντολές αναπαρίστανται
+στην οθόνη με χρήση γραφικών και σκοπός της συγκεκριμένης γλώσσας είναι,
+ο μαθητής να διδάσκει τον υπολογιστή πώς να μάθει να επιλύει προβλήματα
+και όχι το αντίθετο. Αυτό επιτυγχάνεται μέσα απο δημιουργία αλγορίθμων
+από τον μαθητή.</p>
+<h2
+id="τα-links-και-οι-φωτογραφίες-από-το-προσωπικό-μου-αποθετήριο-1">Τα
+Links και οι φωτογραφίες από το προσωπικό μου αποθετήριο:</h2>
+<ul>
+<li><h4 id="το-προσωπικό-μου-site-1">Το προσωπικό μου <a
+href="https://axileaszervos.netlify.app">site</a></h4></li>
+</ul>
+<h3 id="logo">Logo:</h3>
+<ul>
+<li>Tο .md αρχείο της γλώσσας προγραμματισμού Logo στο προσωπικό μου
+αποθετήριο: <a
+href="https://github.com/Axileaszervos/_gallery/blob/fd0a74b630c8e7be62a7af189f2a30497b5bab0d/Logo.md">Logo.md</a></li>
+<li>Η εικόνα της γλώσσας προγραμματισμού Logo στο προσωπικό μου site: <a
+href="https://axileaszervos.netlify.app/gallery/logo/">Logo</a></li>
+<li>Η κανονική εικόνα της γλώσσας προγραμματισμού Logo στο αποθετήριο
+μου: <a
+href="https://github.com/Axileaszervos/images/blob/4b441112152c6ea74f6b2f09f7f6c559a7f07853/Logo.jpg">Logo.jpg</a></li>
+<li>Η resized σε 160x160 pixels της γλώσσας προγραμματισμού Logo εικόνα
+στο αποθετήριο μου: <a
+href="https://github.com/Axileaszervos/images/blob/4b441112152c6ea74f6b2f09f7f6c559a7f07853/Logo-thumb.jpg">Logo-thumb.jpg</a></li>
+</ul>
+<p>### Lego WeDo:</p>
+<ul>
+<li>Tο .md αρχείο της κατασκευής για παιδιά Lego WeDo στο προσωπικό μου
+αποθετήριο: <a href="">Legowedo.md</a></li>
+<li>Η εικόνα της κατασκευής για παιδιά Lego WeDo στο προσωπικό μου site:
+<a href="">Legowedo</a></li>
+<li>Η κανονική εικόνα της κατασκευής για παιδιά Lego WeDo στο αποθετήριο
+μου: <a href="">Legowedo.jpg</a></li>
+<li>Η resized σε 160x160 pixels εικόνα της κατασκευής για παιδιά Lego
+WeDo στο αποθετήριο μου: <a href="">Legowedo-thumb.jpg</a></li>
+</ul>
+<h2 id="τα-links-και-οι-φωτογραφίες-από-το-ομαδικό-αποθετήριο-1">Τα
+Links και οι φωτογραφίες από το ομαδικό αποθετήριο:</h2>
+<ul>
+<li><h4 id="το-ομαδικό-site-1">Το ομαδικό <a
+href="https://omada122.netlify.app">site</a></h4></li>
+</ul>
+<p>### Lego-wedo:</p>
+<ul>
+<li>Tο .md αρχείο του lego-wedo στο αποθετήριο της ομάδας μου: <a
+href="https://github.com/OMADA12/_gallery/blob/master/Legowedo.md">Legowedo.md</a></li>
+<li>Η εικόνα του lego-wedo στο site της ομάδας μου: <a
+href="">Lego-wedo</a></li>
+<li>Η κανονική εικόνα στο αποθετήριο της ομάδας μου: <a
+href="https://github.com/OMADA12/images/blob/master/Legowedo.jpg">Legowedo.jpg</a></li>
+<li>Η resized σε 160x160 pixels εικόνα στο αποθετήριο της ομάδας μου: <a
+href="https://github.com/OMADA12/images/blob/master/Legowedo-thumb.jpg">Legowedo-thumb.jpg</a></li>
+</ul>
+<p>### Logo:</p>
+<ul>
+<li>Tο .md αρχείο του Logo στο αποθετήριο της ομάδας μου: <a
+href="https://github.com/OMADA12/_gallery/blob/master/Logo.md">Logo.md</a></li>
+<li>Η εικόνα του Logo στο site της ομάδας μου: <a href="">Logo</a></li>
+<li>Η κανονική εικόνα στο στο αποθετήριο της ομάδας μου: <a
+href="https://github.com/OMADA12/images/blob/master/Logo.jpg">Logo.jpg</a></li>
+<li>Η resized σε 160x160 pixels εικόνα στο αποθετήριο της ομάδας μου: <a
+href="https://github.com/OMADA12/images/blob/master/Logo-thumb.jpg">Logo-thumb.jpg</a></li>
+</ul>
+<h2 id="pull-requests">PULL REQUESTS</h2>
+<ul>
+<li><a href="https://github.com/OMADA12/_gallery/pull/23">md
+files</a></li>
+<li><a href="https://github.com/OMADA12/site/pull/17">photos</a></li>
+</ul>
+<h1 id="ο-παραδοτεο-warm-ups-cli">4ο ΠΑΡΑΔΟΤΕΟ-WARM UPS CLI</h1>
+<p>Σε αυτό το παραδοτέο είχαμε να εξασκηθούμε με διάφορα <a
+href="https://github.com/epidrome/dokey">warm-ups</a>. Προσωπικά
+ασχολήθηκα και εκτέλεσα δύο από τα διαθέσιμα που υπήρχαν.</p>
+<p>Αρχικά, με την εντολή <a
+href="https://github.com/chubin/wttr.in">wttr</a> εμφάνισα στο terminal
+μου την πρόγνωση του καιρού για τον τόπο που διαμένω και για μια άλλη
+πόλη, επέλεξα αυτό το warm-up επειδή ήθελα να εκτελέσω μια καθημερινή
+λειτουργία χωρίς να την πάρω από κάπου έτοιμη(πχ κινητό,google).</p>
+<p>Στη συνέχεια, με την εντολή <a
+href="https://github.com/ytdl-org/youtube-dl">youtube-dl</a> αναζήτησα
+και κατέβασα ένα mp3 κομμάτι από το youtube και με τη εντολή <a
+href="https://github.com/mpv-player/mpv">mpv</a> το αναπαρήγαγα στο
+τερματικό μου, η ιδέα το να μπορώ να τρέχω διάφορα μουσικά κομμάτια μέσω
+εντολών και μόνο, μου φάνηκε αρκετά ενδιαφέρουσα και είναι ένας
+διαφορετικός τρόπος ο οποίος δεν χρησιμοποιείται συχνά.</p>
+<h1 id="asciinema-videos-1">ASCIINEMA VIDEOS</h1>
+<p><a href="https://asciinema.org/a/533124">ΚΑΙΡΟΣ</a></p>
+<p><a href="https://asciinema.org/a/533149">MUSIC IN TERMINAL</a></p>
+<h1 id="ο-παραδοτεο-συμμετοχικο-περιεχομενο-α2">5ο ΠΑΡΑΔΟΤΕΟ-ΣΥΜΜΕΤΟΧΙΚΟ
+ΠΕΡΙΕΧΟΜΕΝΟ Α2</h1>
+<p>Σε αυτό το παραδοτέο κλιθήκαμε να φτιάξουμε τα δικά μας timelines και
+slides τα οποία έπρεπε να είχαν σχέση με τις φωτογραφίες που
+χρησιμοποιήσαμε για το παραδοτέο 3, επίσης, υπήρχε η δυνατότητα να
+προστεθούν οι εικόνες σε ήδη υπάρχοντα slides και timelines με αντίτιμο
+όμως στον βαθμό. Προσωπικά επέλεξα να φτιάξω τα δικά μου, μιας και είχα
+αρκετές ιδέες και επιπλέον ήταν μια ακόμη πρόκληση για εμένα.</p>
+<p>~Για τον Apple iMac έφτιαξα τα εξής slide και timeline:~</p>
+<p>~S)<a
+href="https://axileaszervos.netlify.app/slides/innovativemachines/">Καινοτόμες
+συσκευές</a> - slide~</p>
+<p>~T)<a
+href="https://axileaszervos.netlify.app/timeline/graphicalinterfaces/">Γραφικό
+περιβάλλον</a> - timeline~</p>
+<p>~Για το virtualboy έφτιαξα τα εξής slide και timeline:~</p>
+<p>~S)<a
+href="https://axileaszervos.netlify.app/slides/virtualreality/">Συσκευές
+εικονικής πραγματικότητας</a> - slide~</p>
+<p>~T)<a href="https://axileaszervos.netlify.app/timeline/3dgraphics/">Η
+εξέλιξη των 3d γραφικών</a> - timeline~</p>
+<p># <code>UPDATE</code> Μετα την αλλαγή εικόνων στο 3ο παραδοτέο έχουν
+αλλάξει τα slides και οι διαφάνειες</p>
+<hr />
+<ul>
+<li>Slide και Timeline για την γλωσσα προγραμματισμού <code>Logo</code>
+<ul>
+<li><a
+href="https://axileaszervos.netlify.app/slides/edu%CF%84ools/">Εκπαιδευτικά
+Εργαλεία</a> - slide</li>
+<li><a
+href="https://axileaszervos.netlify.app/timeline/edutoolstimeline/">Εκπαιδευτικά
+Εργαλεία</a> - timeline</li>
+</ul></li>
+<li>Slide και Timeline για τα ρομπότ-παιχνίδια <code>Lego WeDo</code>
+<ul>
+<li><a
+href="https://axileaszervos.netlify.app/slides/edurobots/">Εκαπιδευτικά
+Ρομπότ</a> - slide</li>
+<li><a
+href="https://axileaszervos.netlify.app/timeline/edurobotstimeline/">Εκπαιδευτικά
+Ρομπότ</a> - timeline</li>
+</ul></li>
+</ul>
+<p>## PULL REQUESTS * <a
+href="https://github.com/OMADA12/site/pull/20">slides</a> * <a
+href="https://github.com/OMADA12/site/pull/20">timelines</a></p>
+<p># 6ο ΠΑΡΑΔΟΤΕΟ-ΚΑΤΑΣΚΕΥΗ ΒΙΒΛΙΟΥ Α Σε αυτό το παραδοτέο έπρεπε να
+προσθέσουμε στα κεφάλαια του βιβλίου μια παράγραφο η οποία να
+συμπληρώνει το ήδη υπάρχον περιεχόμενο. Προσωπικά επέλεξα το</p>
+<h2 id="η-συνησφορά-μου">Η συνησφορά μου</h2>
+<figure>
+<img src="" alt="Η συνεισφορά μου" />
+<figcaption aria-hidden="true">Η συνεισφορά μου</figcaption>
+</figure>
+<h2 id="το-κεφαλαίο-που-ασχολήθηκα">Το κεφαλαίο που ασχολήθηκα</h2>
+<figure>
+<img src="" alt="To κεφάλαιο που επέλεξα" />
+<figcaption aria-hidden="true">To κεφάλαιο που επέλεξα</figcaption>
+</figure>
+<ul>
+<li>link του βιβλίου σε μορφή pdf: <a href="">book.pdf</a></li>
+<li>link απο το δικό μου φίλτρο: <a href="">App.lua</a></li>
+<li>link του περιεχομένου που πρόσθεσα: <a href="">App.md</a></li>
+<li>link του make-latex.sh: <a
+href="https://github.com/Axileaszervos/kallipos/blob/master/make-latex.sh">make-latex</a></li>
+</ul>
+<h1 id="παρδοτεο-7-συμμετοχικο-περιεχομενο-β2">ΠΑΡΔΟΤΕΟ 7-ΣΥΜΜΕΤΟΧΙΚΟ
+ΠΕΡΙΕΧΟΜΕΝΟ Β2</h1>
+<p>Σε αυτό το παραδοτέο χρειάστηκε να φτιάξουμε μια μελέτη περίπτωσης η
+οποία θα πρέπει να συσχετίζεται με τα προηγούμενα παραδοτέα. Προσωπικά
+ασχολήθηκα με την εξέλιξη των Lego Mindstorms και την συνεισφορά τους
+στον εκπαιδευτικό τομέα.</p>
+<h3 id="links-για-τα-md-αρχεία-μου-στο-προσωπικό-μου-αποθετήριο">Links
+για τα md αρχεία μου στο προσωπικό μου αποθετήριο</h3>
+<ul>
+<li><a
+href="https://github.com/Axileaszervos/site/blob/master/_includes/cs-LegoMindstorms.md">cs-LegoMindstorms.md</a></li>
+<li><a
+href="https://github.com/Axileaszervos/site/blob/master/_case-study/LegoMindstorms.md">LegoMidndstorms.md</a></li>
+</ul>
+<h3 id="links-για-τα-md-αρχεία-μου-στο-απεθετήριο-της-ομάδας-μου">Links
+για τα md αρχεία μου στο απεθετήριο της ομάδας μου</h3>
+<ul>
+<li><a
+href="https://github.com/OMADA12/site/blob/master/_includes/cs-LegoMindstorms.md">cs-LegoMindstorms.md</a></li>
+<li><a
+href="https://github.com/OMADA12/site/blob/master/_case-study/LegoMindstorms.md">LegoMidndstorms.md</a></li>
+</ul>
+<h3 id="link-για-την-μελέτη-περίπτωσης-στο-προσωπικό-μου-site">Link για
+την μελέτη περίπτωσης στο προσωπικό μου site</h3>
+<ul>
+<li><a
+href="https://axileaszervos.netlify.app/case-study/legomindstorms/">Lego
+Mindstorms</a></li>
+</ul>
+<h3 id="link-για-την-μελέτη-περίπτωσης-στο-site-της-ομάδας-μου">Link για
+την μελέτη περίπτωσης στο site της ομάδας μου</h3>
+<ul>
+<li><a
+href="https://omada12.netlify.app/case-study/legomindstorms/">Lego
+Mindstorms</a></li>
+</ul>
+<h3 id="βιβλιογραφια">ΒΙΒΛΙΟΓΡΑΦΙΑ</h3>
+<ul>
+<li>https://www.brothers-brick.com/2020/01/31/a-history-of-lego-education-part-2-path-to-mindstorms-feature/</li>
+<li>https://en.wikipedia.org/wiki/Lego_Mindstorms</li>
+<li>https://hackeducation.com/2015/04/10/mindstorms</li>
+<li>https://robotsauthority.com/the-short-history-of-lego-mindstorms/</li>
+</ul>
+<h2 id="pull-requests-1">PULL REQUESTS</h2>
+<ul>
+<li><a
+href="https://github.com/OMADA12/site/pull/25/commits/f6f99cdd1f1f3645f02ae8bb93afdd128bf69d1d">cs-LegoMindstorms.md</a></li>
+<li><a
+href="https://github.com/OMADA12/site/pull/25/commits/fcf8c947b1b943450bb4519d88d4e5254eaba806">LegoMindstorms.md</a></li>
+<li><a
+href="https://github.com/OMADA12/images/pull/21/commits/4ed03122212819a80dadd29ef20ddc1faa1d2a7b">Photos
+for case-study</a></li>
+</ul>
+<h1 id="παραδοτεο-8">ΠΑΡΑΔΟΤΕΟ 8</h1>
+<p>Σε αυτό το παραδοτέο είχαμε να ασχοληθούμε με 4 διαφορετικές <a
+href="https://github.com/epidrome/dokey#hci">ασκήσεις</a>. Προσωπικά
+επέλεξα την 3η άσκηση, στην όποια έπρεπε να δημιουργήσω ένα shell script
+το οποίο θα μετατρέπει αρχεία.</p>
+<h2 id="file-convertor">FILE CONVERTOR</h2>
+<h3
+id="δημιούργησα-ένα-shell-script-στο-οποίο-ο-χρήστης-μπορεί-να-μετατρέψει-epub-και-md-αρχεία-σε-html-και-txt-αντίστοιχα.">Δημιούργησα
+ένα shell script στο οποίο ο χρήστης μπορεί να μετατρέψει epub και md
+αρχεία σε html και txt αντίστοιχα.</h3>
+<ul>
+<li><a
+href="https://github.com/Axileaszervos/EXERCISE-8/blob/main/Convertor.sh">Convertor.sh</a></li>
+<li><a
+href="https://github.com/Axileaszervos/EXERCISE-8/blob/main/MyRepo.html">MyRepo.html</a></li>
+<li><a
+href="https://github.com/Axileaszervos/EXERCISE-8/blob/main/MyRepo.md">MyRepo.md</a></li>
+<li><a
+href="https://github.com/Axileaszervos/EXERCISE-8/blob/main/scratch.epub">scratch.epub</a></li>
+<li><a
+href="https://github.com/Axileaszervos/EXERCISE-8/blob/main/scratch.html">scratch.html</a></li>
+<li><a href="https://asciinema.org/a/541688">asciinema demo</a></li>
+</ul>
+<h1 id="παραδοτεο-9">ΠΑΡΑΔΟΤΕΟ 9</h1>
+<p>Σε αυτό το παραδοτέο έπρεπε να φτιάξουμε μια νέα βιογραφία η οποία θα
+πρέπει να έχει άμεση σύνδεση με τα προηγούμενα παραδοτέα. Επέλεξα να
+γράφω για τον Seymour Papert επειδή, με εντυπωσίασε η συνεισφορά του
+στην εκπαίδευση και φράσεις όπως “Ο ρόλος του καθηγητή δημιουργήθηκε με
+σκοπό να παρέχει τις ιδανικές συνθήκες για την ανακάλυψη γνώσεων και όχι
+για να αναπαράγει έτοιμη πληροφορία” αποτελούν πηγή έμπνευσης για
+εμένα.</p>
+<h3 id="links-για-τα-md-αρχεία-μου-στο-προσωπικό-αποθετήριο">Links για
+τα md αρχεία μου στο προσωπικό αποθετήριο</h3>
+<ul>
+<li><a
+href="https://github.com/Axileaszervos/site/blob/master/_includes/bio-Papert.md">bio-Papert.md</a></li>
+<li><a
+href="https://github.com/Axileaszervos/site/blob/master/_biography/Papert.md">Papert.md</a></li>
+</ul>
+<h3 id="links-για-τα-md-αρχεία-μου-στο-αποθετήριο-της-ομάδας-μου">Links
+για τα md αρχεία μου στο αποθετήριο της ομάδας μου</h3>
+<ul>
+<li><a
+href="https://github.com/OMADA12/site/blob/master/_includes/bio-Papert.md">bio-Papert.md</a></li>
+<li><a
+href="https://github.com/OMADA12/site/blob/master/_biography/Papert.md">Papert.md</a></li>
+</ul>
+<h3 id="link-για-την-βιογραφία-στο-προσωπικό-μου-site">Link για την
+βιογραφία στο προσωπικό μου site</h3>
+<ul>
+<li><a
+href="https://axileaszervos.netlify.app/biography/papert/">Seymour
+Papert</a></li>
+</ul>
+<h3 id="link-για-την-βιογραφία-στο-site-της-ομάδας-μου">Link για την
+βιογραφία στο site της ομάδας μου</h3>
+<ul>
+<li><a href="https://omada12.netlify.app/biography/papert/">Seymour
+Papert</a></li>
+</ul>
+<h3 id="βιβλιογραφια-1">ΒΙΒΛΙΟΓΡΑΦΙΑ</h3>
+<ul>
+<li>https://el.wikipedia.org/wiki/Σέυμουρ_Παπέρτ#Ερευνητική_σταδιοδρομία</li>
+<li>https://www.britannica.com/biography/Seymour-Papert</li>
+<li>https://edu.ellak.gr/2016/08/02/seymour-papert-1928-2016-enas-protoporos-tis-ekpedefsis-ke-tis-pliroforikis/</li>
+</ul>
+<h2 id="pull-requests-2">PULL REQUESTS</h2>
+<ul>
+<li><a
+href="https://github.com/OMADA12/site/pull/26">bio-Papert.md</a></li>
+<li><a href="https://github.com/OMADA12/site/pull/26">Papert.md</a></li>
+<li><a href="https://github.com/OMADA12/images/pull/22">Photos for
+biography</a></li>
+</ul>
+<h1 id="παραδοτεο-10">ΠΑΡΑΔΟΤΕΟ 10</h1>
+<h2 id="compiler">COMPILER</h2>
+<p>Σε αυτό το παραδοτέο συνείζεται η ενασχόληση με τις <a
+href="https://github.com/epidrome/dokey#hci">ασκήσεις</a> του ΗCI όμως,
+θα πρέπει να προστεθεί και χρήση pipelining στο Shell script. Προσωπικά
+επέλεξα την 4η άσκηση, στην όποια χρησιμοποίησα το command line σαν
+IDE.</p>
+<h3
+id="έφτιαξα-ένα-shell-script-το-οποίο-επιτρέπει-στον-χρήστη-να-κάνει-compile-ήδη-υπάρχων-python-αρχεία-και-του-επιτρέπει-να-δημιουργήσει-ένα-νέο-αρχείο-python-στο-οποίο-μπορεί-να-γράφει-μέσα-κώδικα-και-να-το-κάνει-compile.-ακόμη-με-την-χρήση-pipelining-εισάγει-στο-αρχείο-στην-φράση-η-οποία-του-επιτρέπει-να-εκτελείται-μόνο-του-χωρίς-την-λέξη-python-δίπλα-τουpython-axileas.py-και-αφού-ολοκληρωθεί-η-εκτέλεση-του-προγράμματος-αποθηκεύει-τα-αποτελέσματα-σε-ένα-txt-αρχείοαυτή-η-ιδέα-είναι-εμπνευσμένη-από-τον-συμφοιτητή-μου-nkanagno.">Έφτιαξα
+ένα shell script το οποίο επιτρέπει στον χρήστη να κάνει compile ήδη
+υπάρχων python αρχεία και του επιτρέπει να δημιουργήσει ένα νέο αρχείο
+python, στο οποίο μπορεί να γράφει μέσα κώδικα και να το κάνει compile.
+Ακόμη, με την χρήση pipelining εισάγει στο αρχείο στην φράση, η οποία
+του επιτρέπει να εκτελείται μόνο του χωρίς την λέξη python δίπλα
+του(<code>python Axileas.py</code>) και αφού ολοκληρωθεί η εκτέλεση του
+προγράμματος, αποθηκεύει τα αποτελέσματα σε ένα txt αρχείο(Αυτή η ιδέα
+είναι εμπνευσμένη από τον συμφοιτητή μου <a
+href="https://github.com/nkanagno/hci">nkanagno</a>).</h3>
+<ul>
+<li><a
+href="https://github.com/Axileaszervos/EXERCISE-10/blob/main/PythonCompiler.sh">PythonCom.sh</a></li>
+<li><a
+href="https://github.com/Axileaszervos/EXERCISE-10/blob/main/Axileas.py">Axileas.py</a></li>
+<li><a
+href="https://github.com/Axileaszervos/EXERCISE-10/blob/main/results.txt">results.txt</a></li>
+<li><a href="https://asciinema.org/a/541688">asciinema demo</a></li>
+</ul>
+<h1 id="παραδοτεο-11">ΠΑΡΑΔΟΤΕΟ 11</h1>
+<h1 id="links-απο-συζητησεισ">LINKS ΑΠΟ ΣΥΖΗΤΗΣΕΙΣ</h1>
+<ul>
+<li>https://github.com/courses-ionio/help/discussions/1736</li>
+<li>https://github.com/courses-ionio/help/discussions/1463</li>
+<li>https://github.com/courses-ionio/help/discussions/1769</li>
+<li>https://github.com/courses-ionio/help/discussions/1793</li>
+<li>https://github.com/courses-ionio/help/discussions/1484 My Repo My
+Repo My Repo My Repo My Repo My Repo My Repo My Repo My Repo My Repo My
+Repo My Repo</li>
+</ul>
+</body>
+</html>
